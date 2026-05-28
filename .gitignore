@@ -1,0 +1,58 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+ENV/
+dist/
+build/
+*.egg-info/
+
+# 环境变量和配置
+.env
+.env.local
+.env.*.local
+
+# 数据库文件
+*.db
+*.sqlite
+*.sqlite3
+db/chroma_db/
+data/
+uploads/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# 日志
+*.log
+logs/
+
+# 临时文件
+temp/
+tmp/
+*.tmp
+
+# 知识库文件（如果有敏感信息）
+knowledge_data/*.pdf
+knowledge_data/*.docx
+
+# 但保留文件夹结构
+!knowledge_data/.gitkeep
+!uploads/.gitkeep
+!data/.gitkeep
+!db/.gitkeep
+
+# 测试文件
+.pytest_cache/
+.coverage
+htmlcov/
