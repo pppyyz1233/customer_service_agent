@@ -1,27 +1,23 @@
-# 创建 README.md 文件
+#  智能客服Agent系统
 
-#  智能客服系统
+[![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)](https://fastapi.tiangolo.com/)
+[![DeepSeek](https://img.shields.io/badge/DeepSeek-API-orange.svg)](https://deepseek.com/)
+[![MySQL](https://img.shields.io/badge/MySQL-5.7+-red.svg)](https://mysql.com/)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-基于 RAG（检索增强生成）架构的企业级智能客服助手。
+基于 **RAG（检索增强生成）** 和 **Function Calling** 架构的企业级智能客服系统。系统能够理解用户意图、查询订单、跟踪物流、处理退款，并在必要时转接人工客服。
 
-##  功能特性
+##  核心功能
 
--  **用户管理**：注册、登录、Token 认证
--  **智能问答**：基于 DeepSeek 大模型的语义理解
--  **文档解析**：支持 PDF、Word 文档上传和解析
--  **工单管理**：创建、查询、处理客服工单
--  **订单查询**：快速查询订单状态和详情
--  **对话历史**：保存所有对话记录，支持多轮交互
+| 功能模块 | 说明 | 状态 |
+|---------|------|------|
+|  用户管理 | 注册、登录、JWT Token认证 | ✅ |
+|  智能问答 | 基于DeepSeek大模型的语义理解 | ✅ |
+|  订单查询 | 查询订单状态、产品信息 | ✅ |
+|  物流跟踪 | 查询快递物流轨迹 | ✅ |
+|  退款处理 | 申请退款、业务规则校验 | ✅ |
+|  转人工 | 情绪识别、自动创建工单 | ✅ |
+|  会话管理 | 多轮对话、历史记录缓存 | ✅ |
 
-##  技术栈
-
-| 类别 | 技术 |
-|------|------|
-| 后端框架 | FastAPI |
-| 数据库 | MySQL + SQLAlchemy |
-| 向量数据库 | ChromaDB |
-| AI 模型 | DeepSeek Chat + DashScope Embedding |
-| 文档解析 | pdfplumber + python-docx |
-| 认证方式 | JWT Token |
-
-##  项目结构
+##  系统架构
